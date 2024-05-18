@@ -1,0 +1,19 @@
+WorkOfficer{
+    designation,
+    status,
+    canForward,
+    canReturn,
+    canReturnToEdit,
+    canSanction,
+    canPullFromForward,
+    canPullFromReturn,
+    actionTaken:[
+       {
+         actionName,
+         actiontakenDateTime
+       }
+    ]
+    recieveDate,
+    previousOfficer,
+    nextOfficer
+}

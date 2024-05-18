@@ -1,0 +1,27 @@
+a.navbar-brand {
+    color: black !important;
+    font-weight: bold;
+}
+
+.navbar .nav-item .nav-link{
+    color: black !important;
+}
+
+
+.navbar .nav-item .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 0.3rem;
+}
+
+input:focus{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+   .small-hidden{
+    display: none;
+   }
+}

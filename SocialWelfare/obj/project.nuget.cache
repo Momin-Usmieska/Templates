@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z6Ex57iJkQqtrWsslzZB5PX6pUyvA0QYLSQfGRoiyYj1Ek8wJzvngbyI839/0LGAuNV1fyrrDsncbaGl/xvbQQ==",
+  "success": true,
+  "projectFilePath": "/home/momin/Github/Templates/SocialWelfare/SocialWelfare.csproj",
+  "expectedPackageFiles": [
+    "/home/momin/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.4/microsoft.aspnetcore.app.ref.8.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

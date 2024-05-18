@@ -1,0 +1,72 @@
+@{
+    ViewData["Title"] = "Registration Page";
+}
+
+<form>
+    <div class="full-screen-section center-align px-1">
+        <div class="container border shadow-lg mt-5" style="border-radius: 15px;overflow: hidden;">
+            <div class="row position-relative" style="height: 70vh;">
+                <div id="formOverlay" class="col-sm-6 bg-danger position-absolute h-100 center-align text-white">
+                    <div class="center-align flex-column">
+                        <p class="font-heading" id="formHeading">Welcome Back</p>
+                        <img id="formImage" src="~/resources/login.png" alt="Login" class="img-fluid w-75">
+                    </div>
+                </div>
+                <div class="col-sm-6 center-align flex-column" id="loginContainer">
+                    <p class="form-heading text-center">Login</p>
+                    <div class="container d-flex flex-column">
+                        <label for="Username">Username</label>
+                        <input type="text" name="Username" id="Username" placeholder="Username"
+                            class="form-control border-0 border-bottom rounded-0 mb-3">
+                        <label for="Password">Password</label>
+                        <input type="password" name="Password" id="Password" placeholder="Password"
+                            class="form-control border-0 border-bottom rounded-0 mb-3">
+                        <div class="d-flex justify-content-between border rounded-pill mb-3">
+                            <span id="captchaCanvas"
+                                class="captchaCanvas d-flex justify-content-center align-items-center w-75 p-0"></span>
+                            <i id="refreshCaptcha" class="btn bi bi-arrow-clockwise fs-4"></i>
+                        </div>
+                        <label for="Captcha">Captcha</label>
+                        <input type="text" class="form-control border-0 border-bottom rounded-0 mb-3" id="captchaInput"
+                            placeholder="Captcha">
+                        <p id="captchaError" class="fs-6 text-danger text-center"></p>
+                        <button class="btn btn-dark w-25 mx-auto">Login</button>
+                    </div>
+                    <p class="fs-5 text-center mt-4">OR</p>
+                    <p id="switchToRegister" class="text-center" role="button">Register</p>
+                </div>
+                <div class="col-sm-6 center-align flex-column" id="registerContainer">
+                    <p class="form-heading text-center">Register</p>
+                    <div class="container d-flex flex-column">
+                        <label for="Username">Username</label>
+                        <input type="text" name="Username" id="Username" placeholder="Username"
+                            class="form-control border-0 border-bottom rounded-0 mb-2">
+                        <label for="Email">Email</label>
+                        <input type="email" name="Email" id="Email" placeholder="Email"
+                            class="form-control border-0 border-bottom rounded-0 mb-2">
+                        <label for="Password">Password</label>
+                        <input type="password" name="Password" id="Password" placeholder="Password"
+                            class="form-control border-0 border-bottom rounded-0 mb-2">
+                        <label for="Confirm Password">ConfirmPassword</label>
+                        <input type="password" name="ConfirmPassword" id="ConfirmPassword"
+                            placeholder="Confirm Password" class="form-control border-0 border-bottom rounded-0 mb-2">
+                        <div class="d-flex justify-content-between border rounded-pill mb-2">
+                            <span id="captchaCanvas"
+                                class="captchaCanvas d-flex justify-content-center align-items-center w-75 p-0"></span>
+                            <i id="refreshCaptcha" class="btn bi bi-arrow-clockwise fs-4"></i>
+                        </div>
+                        <label for="Captcha">Captcha</label>
+                        <input type="text" class="form-control border-0 border-bottom rounded-0 mb-2" id="captchaInput"
+                            placeholder="Captcha">
+                        <p id="captchaError" class="fs-6 text-danger text-center"></p>
+                        <button class="btn btn-dark w-25 mx-auto">Register</button>
+                    </div>
+                    <p class="fs-5 text-center mt-4">OR</p>
+                    <p id="switchToLogin" class="text-center" role="button">Login</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="~/js/Home/authentication.js"></script>

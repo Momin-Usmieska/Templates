@@ -1,0 +1,324 @@
+<div class="center-align" style="height: 110vh;">
+    <div class="container shadow-lg rounded mt-5 p-5">
+        <div class="container center-align sm-hidden">
+            <p class="p-3 rounded bg-success text-white fw-bold">General Details</p>
+            <p class="border border-primary lineNext h-0" style="width: 8vw;"></p>
+            <p class="p-3 rounded bg-primary text-white fw-bold">Address Details</p>
+            <p class="border border-primary lineNext h-0" style="width: 8vw;"></p>
+            <p class="p-3 rounded bg-primary text-white fw-bold">Bank Details</p>
+            <p class="border border-primary lineNext h-0" style="width: 8vw;"></p>
+            <p class="p-3 rounded bg-primary text-white fw-bold">Documents</p>
+        </div>
+        <form id="form1">
+            <div class="container d-flex flex-column mt-5">
+                <div class="d-flex justify-content-center">
+                    <img src="/resources/profile.png" alt="Profile" class="img-fluid rounded-circle">
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="Name">Name</label>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="Applicant Image">Applicant Image</label>
+                        <input class="form-control" type="file" name="applicantImage" id="applicantImage">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-sm-6">
+                        <label for="Relation">Relation</label>
+                        <select class="form-select" name="relation" id="relation">
+                            <option value="Father">Father</option>
+                            <option value="Guardian">Guardian</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="Relation Name">Relation Name</label>
+                        <input class="form-control" placeholder="Relation Name" type="text" name="relationName"
+                            id="relationName">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-sm-6">
+                        <label for="Mother's Name">Mother's Name</label>
+                        <input class="form-control" placeholder="Mother's Name" type="text" name="motherName"
+                            id="motherName">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="Cateogry">Cateogry</label>
+                        <select class="form-select" name="category" id="category">
+                            <option value="PDD">PDD</option>
+                            <option value="PHD">PHD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-sm-6">
+                        <label for="Date Of Birth">Date Of Birth</label>
+                        <input class="form-control" placeholder="Date Of Birth" type="date" name="dateOfBirth"
+                            id="dateOfBirth">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="Date Of Marriage">Date Of Marriage</label>
+                        <input class="form-control" placeholder="Date Of Marriage" type="date" name="dateOfMarriage"
+                            id="dateOfMarriage">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-sm-6">
+                        <label for="Email">Email</label>
+                        <input class="form-control" placeholder="Email" type="email" name="email" id="email">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="Mobile Number">Mobile Number</label>
+                        <input class="form-control" placeholder="Mobile Number" type="date" name="mobileNumber"
+                            id="mobileNumber">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form id="form2" style="display: none;">
+            <div class="container d-flex flex-column mt-5">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="Present Address">Present Address</label>
+                        <input class="form-control" type="text" name="presentAddress" id="presentAddress"
+                            placeholder="Present Address">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="Present District">Present District</label>
+                        <input class="form-control" type="text" name="presentDistrict" id="presentDistrict"
+                            placeholder="Present District">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="Present Tehsil">Present Tehsil</label>
+                        <input class="form-control" type="text" name="presentTehsil" id="presentTehsil"
+                            placeholder="Present Tehsil">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="Present Block">Present Block</label>
+                        <input class="form-control" type="text" name="presentBlock" id="presentBlock"
+                            placeholder="Present Block">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="Present Ward">Present Ward</label>
+                        <input class="form-control" type="text" name="presentWard" id="presentWard"
+                            placeholder="Present Ward">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="Present Village">Present Village</label>
+                        <input class="form-control" type="text" name="presentVillage" id="presentVillage"
+                            placeholder="Present Village">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="Present Pincode">Present Pincode</label>
+                        <input class="form-control" type="text" name="presentPincode" id="presentPincode"
+                            placeholder="Present Pincode">
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="Permanent Address">Permanent Address</label>
+                        <input class="form-control" type="text" name="permanentAddress" id="permanentAddress"
+                            placeholder="Permanent Address">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="Permanent District">Permanent District</label>
+                        <input class="form-control" type="text" name="permanentDistrict" id="permanentDistrict"
+                            placeholder="Present District">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="Permanent Tehsil">Permanent Tehsil</label>
+                        <input class="form-control" type="text" name="permanentTehsil" id="permanentTehsil"
+                            placeholder="Present Tehsil">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="Permanent Block">Permanent Block</label>
+                        <input class="form-control" type="text" name="permanentBlock" id="permanentBlock"
+                            placeholder="Permanent Block">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="Permanent Ward">Permanent Ward</label>
+                        <input class="form-control" type="text" name="permanentWard" id="permanentWard"
+                            placeholder="Present Ward">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="Permanent Village">Permanent Village</label>
+                        <input class="form-control" type="text" name="permanentVillage" id="permanentVillage"
+                            placeholder="Present Village">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="Permanent Pincode">Permanent Pincode</label>
+                        <input class="form-control" type="text" name="permanentPincode" id="permanentPincode"
+                            placeholder="Permanent Pincode">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form id="form3" style="display: none;">
+            <div class="container d-flex flex-column mt-5">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="Bank Name">Bank Name</label>
+                        <input class="form-control" type="text" name="bankName" id="bankName" placeholder="Bank Name">
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="Branch Name">Branch Name</label>
+                        <input class="form-control" type="text" name="branchName" id="branchName"
+                            placeholder="Branch Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="Ifsc Code">Ifsc Code</label>
+                        <input class="form-control" type="text" name="ifscCode" id="ifscCode" placeholder="Ifsc Code">
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="Account Number">Account Number</label>
+                        <input class="form-control" type="text" name="accountNumber" id="accountNumber"
+                            placeholder="Account Number">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form id="form4" style="display: none;">
+            <div class="container d-flex flex-column mt-5">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label for="Identity Proof">Identity Proof</label>
+                        <select class="form-select" name="identityProof" id="identityProof">
+                            <option value="Adhaar Card">Adhaar Card</option>
+                            <option value="Domicile Certificate">Domicile Certificate</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="File Enclosed">File Enclosed</label>
+                        <input class="form-control" type="file" name="identityProofFile" id="identityProofFile">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="Marriage Certificate">Marriage Certificate</label>
+                        <select class="form-select" name="marriageCertificate" id="marriageCertificate">
+                            <option value="Marriage Certificate">Marriage Certificate</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="File Enclosed">File Enclosed</label>
+                        <input class="form-control" type="file" name="marriageCertificateFile"
+                            id="marriageCertificateFile">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-sm-3">
+                        <label for="Identity Proof">Identity Proof</label>
+                        <select class="form-select" name="identityProof" id="identityProof">
+                            <option value="Adhaar Card">Adhaar Card</option>
+                            <option value="Domicile Certificate">Domicile Certificate</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="File Enclosed">File Enclosed</label>
+                        <input class="form-control" type="file" name="identityProofFile" id="identityProofFile">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="Marriage Certificate">Marriage Certificate</label>
+                        <select class="form-select" name="marriageCertificate" id="marriageCertificate">
+                            <option value="Marriage Certificate">Marriage Certificate</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="File Enclosed">File Enclosed</label>
+                        <input class="form-control" type="file" name="marriageCertificateFile"
+                            id="marriageCertificateFile">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-sm-3">
+                        <label for="Identity Proof">Identity Proof</label>
+                        <select class="form-select" name="identityProof" id="identityProof">
+                            <option value="Adhaar Card">Adhaar Card</option>
+                            <option value="Domicile Certificate">Domicile Certificate</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="File Enclosed">File Enclosed</label>
+                        <input class="form-control" type="file" name="identityProofFile" id="identityProofFile">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="Marriage Certificate">Marriage Certificate</label>
+                        <select class="form-select" name="marriageCertificate" id="marriageCertificate">
+                            <option value="Marriage Certificate">Marriage Certificate</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="File Enclosed">File Enclosed</label>
+                        <input class="form-control" type="file" name="marriageCertificateFile"
+                            id="marriageCertificateFile">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-sm-3">
+                        <label for="Identity Proof">Identity Proof</label>
+                        <select class="form-select" name="identityProof" id="identityProof">
+                            <option value="Adhaar Card">Adhaar Card</option>
+                            <option value="Domicile Certificate">Domicile Certificate</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="File Enclosed">File Enclosed</label>
+                        <input class="form-control" type="file" name="identityProofFile" id="identityProofFile">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="Marriage Certificate">Marriage Certificate</label>
+                        <select class="form-select" name="marriageCertificate" id="marriageCertificate">
+                            <option value="Marriage Certificate">Marriage Certificate</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="File Enclosed">File Enclosed</label>
+                        <input class="form-control" type="file" name="marriageCertificateFile"
+                            id="marriageCertificateFile">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-sm-3">
+                        <label for="Identity Proof">Identity Proof</label>
+                        <select class="form-select" name="identityProof" id="identityProof">
+                            <option value="Adhaar Card">Adhaar Card</option>
+                            <option value="Domicile Certificate">Domicile Certificate</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="File Enclosed">File Enclosed</label>
+                        <input class="form-control" type="file" name="identityProofFile" id="identityProofFile">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="Marriage Certificate">Marriage Certificate</label>
+                        <select class="form-select" name="marriageCertificate" id="marriageCertificate">
+                            <option value="Marriage Certificate">Marriage Certificate</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="File Enclosed">File Enclosed</label>
+                        <input class="form-control" type="file" name="marriageCertificateFile"
+                            id="marriageCertificateFile">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="d-flex gap-2 justify-content-center mt-2">
+            <button class="btn btn-dark width-25 mt-2" id="previous">Previous</button>
+            <button class="btn btn-dark width-25 mt-2" id="next">Next</button>
+        </div>
+    </div>
+</div>
+
+<script src="/js/User/serviceform.js"></script>

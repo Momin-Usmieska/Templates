@@ -1,0 +1,64 @@
+<div class="full-screen-section center-align flex-column">
+    <div class="container">
+        <table class="table table-striped table-hover table-bordered" style="border-radius:10px;overflow:hidden;">
+            <thead class="bg-dark text-white">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Reference Number <i class="fa-solid fa-sort"></i></th>
+                    <th scope="col">Applicant Name <i class="fa-solid fa-sort"></i></th>
+                    <th scope="col">Option</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td> JK/SWD/2023-2024/1</td>
+                    <td> Momin Rather</td>
+                    <td><button class="btn btn-dark w-100" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">View</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Application Timeline</h1>
+                <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container d-flex flex-column gap-3">
+                    <div
+                        class="border-start border-4 border-dark d-flex align-items-center justify-content-between px-2">
+                        <p class="fw-bold">27 Aug 2024 <br> At 2:30pm</p>
+                        <p class="text-center" style="max-width: 100px;word-wrap: break-word;">DSWO</p>
+                        <p class="fw-bold">Recieved</p>
+                    </div>
+                    <div
+                        class="border-start border-4 border-dark d-flex align-items-center justify-content-between px-2">
+                        <p class="fw-bold">28 Aug 2024 <br> At 1:30pm</p>
+                        <p class="text-center" style="max-width: 100px;word-wrap: break-word;">DSWO</p>
+                        <p class="fw-bold">Forwarded</p>
+                    </div>
+                    <div
+                        class="border-start border-4 border-dark d-flex align-items-center justify-content-between px-2">
+                        <p class="fw-bold">28 Aug 2024 <br> At 1:30pm</p>
+                        <p class="text-center" style="max-width: 100px;word-wrap: break-word;">DDC</p>
+                        <p class="fw-bold">Recieved</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/js/pagination.js"></script>
